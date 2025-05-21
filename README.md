@@ -2,13 +2,13 @@
 
 **"Arginine: II. Interactions of Its Salt Bridges with Branched Aliphatic Side Chains"**
 
-The code is based on the DVR formulation of the solutions by Bačić and Light [Annu. Rev. Phys. Chem. 40 (1989) 469-498].
+The code is based on the DVR formulation of quantum vibrational dynamics, following the approach of Bačić and Light [Annu. Rev. Phys. Chem. 40 (1989) 469-498].
 
 This repository contains Python code for performing 1D quantum dynamics calculation of vibrational states in a predefined potential. In our example, we used it for a double-well potential, a fitted quartic potential obtained from ab initio points. The method uses a **finite basis representation (FBR)** of Hermite functions, which is transformed into a **discrete variable representation (DVR)** via diagonalization of the position operator.
 
-This method enables the construction of the full quantum Hamiltonian—including both kinetic and potential energy terms. The DVR transformation allows for a straightforward computation of the potential energy and efficient diagonalization of the total Hamiltonian. 
+This method enables the construction of the full quantum Hamiltonian, including both kinetic and potential energy. The DVR transformation allows for a straightforward computation of the potential energy and diagonalization of the total Hamiltonian. 
 
-This approach is commonly used to study proton tunneling, hydrogen transfer, and vibrational dynamics in low-dimensional quantum systems, such as those found in salt bridges, biomolecular hydrogen bonds, and model tunneling coordinates.
+This approach is commonly used to study proton tunneling, hydrogen transfer, and vibrational dynamics in quantum systems, such as those found in salt bridges, hydrogen bonds, and  tunneling.
 
 ## The main notebook is located in: 
 
