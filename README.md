@@ -1,0 +1,1 @@
+# 1D-Quantum-Mechanical-Dynamics-Calculations-Using-DVR-with-Hermite-Functions-in-Python
