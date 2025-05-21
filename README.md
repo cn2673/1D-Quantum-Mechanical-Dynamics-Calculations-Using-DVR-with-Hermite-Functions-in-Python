@@ -10,6 +10,15 @@ This method enables the construction of the full quantum Hamiltonian, including 
 
 This approach is commonly used to study proton tunneling, hydrogen transfer, and vibrational dynamics in quantum systems, such as those found in salt bridges, hydrogen bonds, and  tunneling.
 
+## Inputs & Customization
+You must define the following problem-specific inputs:
+
+| Variable      | Description |
+|---------------|-------------|
+| `nzpt`   | # of quadrature points. Higher values improve accuracy but increase runtime. |
+| `z_min`, `z_max` | Physical coordinate limits of the DVR grid in Å |
+| `potential(x)` | Python function defining your potential energy surface as a function of position `x` in Å, returning energy in **cm⁻¹**. |
+
 ## The main notebook is located in: 
 
 notebooks/1D-quantum-mechanical-calculations.ipynb
@@ -27,12 +36,12 @@ notebooks/1D-quantum-mechanical-calculations.ipynb
 ## Precomputed 50 quad point matrices
 data_files/Q_matrix.txt  - Position operator matrix (FBR)
 
-data_files/K_raw_matrix.txt - Raw kinetic energy matrix (Hermite basis)
+data_files/K_raw_matrix.txt - Raw kinetic energy matrix 
 
 data_files/KE_matrix.txt  - Final kinetic energy matrix (DVR + mass-scaled)
 
 ## Computational Note
-Running the notebook with n = 50 quadrature points (basis functions) is computationally intensive and may take 10–15 minutes depending on your machine or Google Colab session.
+Running the notebook with n=50 quadrature points is computationally intensive and may take 10–15 minutes depending on your machine or Google Colab session.
 
 ## Requirements
 
