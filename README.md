@@ -8,14 +8,14 @@ This repository contains Python code for performing 1D quantum dynamics calculat
 
 This method enables the construction of the full quantum Hamiltonian, including both kinetic and potential energy. The DVR transformation allows for a straightforward computation of the potential energy and diagonalization of the total Hamiltonian. 
 
-This approach is commonly used to study proton tunneling, hydrogen transfer, and vibrational dynamics in quantum systems, such as those found in salt bridges, hydrogen bonds, and  tunneling.
+This approach is used to study proton tunneling and vibrational dynamics in quantum systems.
 
 ## Inputs & Customization
 You must define the following problem-specific inputs:
 
 | Variable      | Description |
 |---------------|-------------|
-| `nzpt`   | # of quadrature points. Higher values improve accuracy but increase runtime. |
+| `nzpt`   | # of quadrature points. Higher values improve precision but increase runtime. |
 | `z_min`, `z_max` | Physical coordinate limits of the DVR grid in Å |
 | `potential(x)` | Python function defining your potential energy surface as a function of position `x` in Å, returning energy in **cm⁻¹**. |
 
@@ -37,7 +37,7 @@ notebooks/1D-quantum-mechanical-calculations.ipynb
 - Construction of matrices in **finite basis representation(FBR)**
 - Diagonalization of the position operator to obtain DVR grid points
 - Transformation of the kinetic energy operator from FBR to DVR
-- Evaluation of defined potential
+- Evaluation of defined potential in DVR
 - Assembly of the full Hamiltonian matrix in DVR
 - Computation of vibrational eigenvalues and wavefunctions
 - Projection of wavefunctions onto a real-space grid
