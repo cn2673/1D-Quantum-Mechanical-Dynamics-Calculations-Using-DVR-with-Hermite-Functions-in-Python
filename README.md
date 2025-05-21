@@ -19,6 +19,16 @@ You must define the following problem-specific inputs:
 | `z_min`, `z_max` | Physical coordinate limits of the DVR grid in Å |
 | `potential(x)` | Python function defining your potential energy surface as a function of position `x` in Å, returning energy in **cm⁻¹**. |
 
+After solving the  Hamiltonian, the wavefunctions are projected onto a realspace grid for visualization. The following are user-defined parameters that control the grid and the number of plotted states:
+
+| Parameter     | Description                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| `x_min`       | Left bound                            |
+| `x_max`       | Right bound                            |
+| `nx`          | # of grid points between `x_min` and `x_max`                           |
+| `ntotst`      | # of vibrational states to project and visualize      |
+
+
 ## The main notebook is located in: 
 
 notebooks/1D-quantum-mechanical-calculations.ipynb
